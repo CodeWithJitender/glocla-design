@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome Icon  -->
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Slick slider Css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C5A056",
+              secondary: "#fff7ed",
+              accent: "#fff7ed",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+              cal: ["Cal Sans", "sans-serif"],
+            },
+            backgroundImage:
+              "'linear-gradient(135deg, #C5A056 0%, #FFFFFF 100%)'",
+          },
+        },
+      };
+    </script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header Starts Here -->
+    <header class="w-full absolute top-0 left-0 z-50">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img
+              src="images/logo.png"
+              alt="Glocal Design"
+              class="h-10 sm:h-12 w-auto"
+            />
+          </div>
+
+          <!-- Right Section -->
+          <div class="">
+            <a
+              href="tel:+919166197371"
+              class="items-center rounded-full bg-primary px-4 py-2 font-medium text-white font-poppins hover:opacity-90 transition"
+            >
+              <i class="fas fa-phone-alt"></i> +91 91661 97371
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header Ends Here -->
+
+    <!-- Hero Starts Here -->
+    <section
+      class="relative pt-[150px] pb-[50px] flex items-center bg-cover bg-center"
+      style="background-image: url(&quot;images/hero.jpg&quot;)"
+    >
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div
+        class="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- LEFT CONTENT -->
+          <div class="text-white font-poppins">
+            <p class="text-[28px] font-poppins font-lighter text-white">
+              Smart
+            </p>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-8xl font-bold leading-tight text-[#FFEFCE]"
+            >
+              Interior <br class="hidden md:block" />Design
+            </h1>
+
+            <p class="mt-4 text-[28px] font-poppins font-lighter text-white">
+              Solutions with the <br class="hidden md:block" />
+              <span class="font-semibold">Right Expertise</span>
+            </p>
+
+            <p class="font-inter mt-4 md:mt-[100px]">
+              Expert Designers | Cost Control | Stage-Wise Quality Checks
+            </p>
+
+            <div class="mt-10">
+              <a
+                href=""
+                class="mt-6 rounded-full border border-primary px-6 py-3 text-sm font-semibold text-white hover:opacity-90 transition"
+              >
+                Book a Free Design Consultation
+              </a>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div
+            class="bg-white/30 backdrop-blur rounded-2xl p-6 sm:p-8 shadow-xl"
+          >
+            <h3 class="font-semibold font-cal text-[#775000] text-[22px]">
+              Let’s Design a Space<br />
+              You’ll Love Coming Back To
+            </h3>
+
+            <p class="font-poppins text-[#323232] mt-2">
+              Share your project details and our design team will get in touch
+            </p>
+
+            <form id="designForm" class="mt-6 space-y-4">
+              <!-- FormSubmit settings -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Interior Design Lead"
+              />
+              <!-- <input type="hidden" name="_captcha" value="false" /> -->
+              <input type="hidden" name="_template" value="table" />
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="">
+                  <label for="" class="font-poppins text-[#080808] font-medium"
+                    >Name*</label
+                  >
+                  <input
+                    name="Name"
+                    type="text"
+                    required
+                    placeholder="Your full name"
+                    class="input p-4 font-poppins text-[#00000082] bg-white rounded-[10px] w-full mt-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+                <div class="">
+                  <label for="" class="font-poppins text-[#080808] font-medium"
+                    >Phone No.*</label
+                  >
+                  <input
+                    type="number"
+                    name="Phone"
+                    required
+                    placeholder="Your phone number"
+                    class="input p-4 font-poppins text-[#00000082] bg-white rounded-[10px] w-full mt-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+              </div>
+
+              <div class="">
+                <label for="" class="font-poppins text-[#080808] font-medium"
+                  >Email*</label
+                >
+                <input
+                  type="email"
+                  name="Email"
+                  required
+                  placeholder="your@email.com"
+                  class="input p-4 font-poppins text-[#00000082] bg-white rounded-[10px] w-full mt-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+
+              <div class="">
+                <label for="" class="font-poppins text-[#080808] font-medium"
+                  >City*</label
+                >
+                <input
+                  type="text"
+                  name="City"
+                  required
+                  placeholder="Your City"
+                  class="input p-4 font-poppins text-[#00000082] bg-white rounded-[10px] w-full mt-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="w-full rounded-full bg-primary py-3 text-sm font-semibold text-black hover:opacity-90 transition bg-gradient-to-r from-primary to-secondary text-white font-poppins"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUCCESS POPUP -->
+      <div
+        id="successMessage"
+        class="hidden fixed top-6 right-6 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg z-50"
+      >
+        ✅ Request submitted successfully!
+      </div>
+    </section>
+    <!-- Hero Ends Here -->
+
+    <!-- Why Choose Starts Here -->
+    <section class="py-20 bg-white">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row gap-12 items-start pb-10">
+          <div class="">
+            <!-- Small label -->
+            <span
+              class="inline-flex items-center gap-2 text-xs font-medium text-gray-600 border border-gray-200 rounded-full px-3 py-1"
+            >
+              <span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+              WHO WE ARE
+            </span>
+          </div>
+          <!-- LEFT CONTENT -->
+          <div>
+            <h2
+              class="text-3xl sm:text-4xl font-bold font-poppins text-gray-900"
+            >
+              Why <br />
+              <span class="text-primary">Glocal Design?</span>
+            </h2>
+
+            <p class="mt-3 font-medium text-gray-800 font-poppins text-[22px]">
+              Not Just Design. Design Done Right.
+            </p>
+
+            <p class="mt-4 md:mt-6 text-gray-600 leading-relaxed max-w-4xl">
+              Designing a space is more than choosing colors and furniture. It’s
+              about planning every detail so your interiors look great, function
+              smoothly and stay within budget. That’s where Glocal Design makes
+              the difference.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#FFFCF6] p-4">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- FEATURES -->
+            <div class="space-y-4">
+              <!-- Item -->
+              <div class="bg-white p-4 rounded-[18px] font-poppins">
+                <div
+                  class="flex md:gap-4 flex-col md:flex-row md:justify-between w-full md:items-center"
+                >
+                  <div class="w-10 h-10">
+                    <img src="images/why-1.png" alt="" />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-[22px] font-semibold text-gray-900 md:text-end"
+                    >
+                      Expert
+                      <span class="text-primary font-bold">3D Design</span>
+                      <br class="hidden md:block" />
+                      Concepts
+                    </h4>
+                  </div>
+                </div>
+                <p class="text-[#6F6F6F] mt-3 max-w-md">
+                  We create detailed 3D visuals so you can see exactly how your
+                  space will look before any work begins.
+                </p>
+              </div>
+              <!-- Item -->
+              <div class="bg-white p-4 rounded-[18px] font-poppins">
+                <div
+                  class="flex md:gap-4 flex-col md:flex-row md:justify-between w-full md:items-center"
+                >
+                  <div class="w-10 h-10">
+                    <img src="images/why-2.png" alt="" />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-[22px] font-semibold text-gray-900 md:text-end"
+                    >
+                      <span class="text-primary font-bold">Quality Checks </span
+                      >At
+                      <br class="hidden md:block" />
+                      Every Stage
+                    </h4>
+                  </div>
+                </div>
+                <p class="text-[#6F6F6F] mt-3 max-w-md">
+                  We conduct structured quality checks during execution to
+                  ensure the design is being followed correctly.
+                </p>
+              </div>
+              <!-- Item -->
+              <div class="bg-white p-4 rounded-[18px] font-poppins">
+                <div
+                  class="flex md:gap-4 flex-col md:flex-row md:justify-between w-full md:items-center"
+                >
+                  <div class="w-10 h-10">
+                    <img src="images/why-3.png" alt="" />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-[22px] font-semibold text-gray-900 md:text-end"
+                    >
+                      <span class="text-primary font-bold"
+                        >Cost Conscious
+                      </span>
+                      <br class="hidden md:block" />
+                      Design Guidance
+                    </h4>
+                  </div>
+                </div>
+                <p class="text-[#6F6F6F] mt-3 max-w-md">
+                  We provide Clear drawings, 3D visualisations and expert
+                  oversight to prevent budget overruns.
+                </p>
+              </div>
+              <!-- Item -->
+              <div class="bg-white p-4 rounded-[18px] font-poppins">
+                <div
+                  class="flex md:gap-4 flex-col md:flex-row md:justify-between w-full md:items-center"
+                >
+                  <div class="w-10 h-10">
+                    <img src="images/why-4.png" alt="" />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-[22px] font-semibold text-gray-900 md:text-end"
+                    >
+                      <span class="text-primary font-bold">Cost Control </span>
+                      <br class="hidden md:block" />
+                      Without Compromise
+                    </h4>
+                  </div>
+                </div>
+                <p class="text-[#6F6F6F] mt-3 max-w-md">
+                  Smart planning and clear documentation help you avoid
+                  unnecessary expenses.
+                </p>
+              </div>
+            </div>
+            <div class="img h-full">
+              <img
+                src="images/why-choose.jpg"
+                class="h-full object-fit-cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Ends Here -->
+
+    <!-- Interior Projects Starts Here -->
+    <section
+      class="relative h-screen flex items-center bg-cover bg-center"
+      style="background-image: url(&quot;images/interior-projects.jpg&quot;); background-position: bottom; "
+    >
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/45"></div>
+
+      <div class="relative z-10 w-full">
+        <div class="max-w-[1400px] relative mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- CENTER CONTENT -->
+          <div class="text-center  mx-auto">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white font-poppins"
+            >
+              Interior Projects
+              <br class="hidden md:block">
+              <span class=" text-[#FFDA90] mt-2">
+                Shouldn’t 
+              </span>
+              Feel Overwhelming
+            </h2>
+
+            <p class="font-poppins mt-4 text-sm sm:text-[18px] text-gray-200">
+              These problems don’t just cost money, they cause
+              stress <br /> and disappointment.
+            </p>
+          </div>
+
+          <!-- BOTTOM PROBLEMS -->
+          <div
+            class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-poppins text-[18px] items-end"
+          >
+            <!-- Item -->
+            <div class="text-black text-sm">
+              <p class="font-medium  mb-2">
+                Many homeowners and businesses struggle with:
+              </p>
+              <p>Not being able to visualize the final result</p>
+            </div>
+
+            <!-- Item -->
+            <div class="text-black text-sm">
+              <p>Budget going out of control midway</p>
+            </div>
+
+            <!-- Item -->
+            <div class="text-black text-sm">
+              <p>Quality issues noticed only after completion</p>
+            </div>
+
+            <!-- Item -->
+            <div class="text-black text-sm">
+              <p>Poor coordination between designers and vendors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interior Projects Ends Here -->
+
+    <!-- Designed Spaces Starts Here -->
+    <!-- Designed Spaces Ends Here -->
+
+    <!-- Footer Starts Here -->
+
+    <!-- Footer Ends Here -->
+
+    <!-- Custom JavaScript -->
+    <script>
+      $(document).ready(function () {
+        $("#designForm").on("submit", function (e) {
+          e.preventDefault();
+
+          const form = $(this);
+
+          $.ajax({
+            url: "https://formsubmit.co/ajax/jitender@digicots.com", // ✅ USE FORM ACTION
+            method: "POST",
+            data: form.serialize(),
+            dataType: "json", // ✅ REQUIRED FOR FORMSUBMIT
+            success: function () {
+              $("#successMessage").removeClass("hidden").fadeIn();
+              form[0].reset();
+
+              setTimeout(function () {
+                $("#successMessage").fadeOut();
+              }, 5000);
+            },
+            error: function () {
+              alert("Form submission failed. Please try again.");
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
