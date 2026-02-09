@@ -141,14 +141,6 @@
             </p>
 
             <form id="designForm" class="mt-6 space-y-4">
-              <!-- FormSubmit settings -->
-              <input
-                type="hidden"
-                name="_subject"
-                value="New Interior Design Lead"
-              />
-              <!-- <input type="hidden" name="_captcha" value="false" /> -->
-              <input type="hidden" name="_template" value="table" />
 
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div class="">
@@ -590,8 +582,8 @@
           const form = $(this);
 
           $.ajax({
-            url: "https://formsubmit.co/ajax/jitender@digicots.com", // ✅ USE FORM ACTION
             method: "POST",
+            url: "https://formsubmit.co/ajax/jitender@digicots.com", // ✅ USE FORM ACTION
             data: form.serialize(),
             dataType: "json", // ✅ REQUIRED FOR FORMSUBMIT
             success: function () {
