@@ -62,11 +62,13 @@
         <div class="flex items-center justify-between h-20">
           <!-- Logo -->
           <div class="flex items-center">
-            <img
+           <a href="https://glocaldesign.in/" target="_blank">
+             <img
               src="images/logo.png"
               alt="Glocal Design"
               class="h-10 sm:h-12 md:h-20 w-auto"
             />
+           </a>
           </div>
 
           <!-- Right Section -->
@@ -223,9 +225,9 @@
     <section class="pt-14 md:pt-20 bg-white">
       <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          class="flex flex-col md:flex-row gap-5 md:gap-12 items-start pb-20"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-5 md:gap-12 items-start md:border-t border-[#B2B2B2] pb-5 md:pb-1"
         >
-          <div class="">
+          <div class="pt-4">
             <!-- Small label -->
             <span
               class="inline-flex items-center gap-2 text-xs font-medium text-gray-600 border border-gray-200 rounded-full px-3 py-1"
@@ -235,7 +237,41 @@
             </span>
           </div>
           <!-- LEFT CONTENT -->
-          <div>
+          <div class="sm:col-span-2 md:col-span-4 md:p-10  md:border-s border-[#B2B2B2]">
+            <h2
+              class="text-3xl sm:text-4xl font-bold font-poppins text-gray-900"
+            >
+              <span class="text-primary">About</span>
+              Us
+            </h2>
+
+            <p class="mt-1 md:mt-3 font-medium text-gray-800 font-poppins text-[22px]">
+            Not Just Design. Design Done Right.
+            </p>
+
+            <p
+              class="mt-2 sm:mt-4 md:mt-6 text-gray-600 leading-relaxed max-w-4xl"
+            >
+             At Glocal Design, we believe every space tells a story. Our approach blends creativity, functionality and emotion to design interiors that feel both personal and purposeful. From concept to execution, we craft environments that inspire comfort, connection and timeless beauty.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-5 md:gap-12 items-start pb-20    md:border-t border-[#B2B2B2]"
+        >
+          <div class="pt-4">
+            <!-- Small label -->
+            <span
+              class="inline-flex items-center gap-2 text-xs font-medium text-gray-600 border border-gray-200 rounded-full px-3 py-1"
+            >
+              <span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+              SERVICES
+            </span>
+          </div>
+          <!-- LEFT CONTENT -->
+          <div class="sm:col-span-2 md:col-span-4  md:p-10  md:border-s border-[#B2B2B2]">
             <h2
               class="text-3xl sm:text-4xl font-bold font-poppins text-gray-900"
             >
@@ -358,6 +394,76 @@
     </section>
 
     <!-- Why Choose Ends Here -->
+
+     <!-- Interior Projects Starts Here -->
+    <section
+      class="relative h-screen flex items-center bg-cover bg-center"
+      style="
+        background-image: url(&quot;images/interior-projects.jpg&quot;);
+        background-position: bottom;
+      "
+    >
+      <!-- Dark Overlay -->
+      <!-- <div class="absolute inset-0 bg-black/45"></div> -->
+
+      <div class="w-full">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- CENTER CONTENT -->
+          <div class="text-center mx-auto">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white font-poppins"
+            >
+              Interior Projects
+              <br class="hidden md:block" />
+              <span class="text-[#FFDA90] mt-2"> Shouldn’t </span>
+              Feel Overwhelming
+            </h2>
+
+            <p class="font-poppins mt-4 text-sm sm:text-[18px] text-gray-200">
+              These problems don’t just cost money, they cause stress <br />
+              and disappointment.
+            </p>
+          </div>
+
+          <!-- BOTTOM PROBLEMS -->
+
+          <div
+            class="px-4 absolute bottom-4 md:bottom-10 left-0 mt-4 text-center sm:text-start w-full"
+          >
+            <div class="max-w-[1400px] mx-auto">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 font-poppins text-[18px] items-end"
+              >
+                <!-- Item -->
+                <div class="text-black text-sm">
+                  <p class="font-medium mb-2">
+                    Many homeowners and businesses struggle with:
+                  </p>
+                  <p>Not being able to visualize the final result</p>
+                </div>
+
+                <!-- Item -->
+                <div class="text-black text-sm">
+                  <p>Budget going out of control midway</p>
+                </div>
+
+                <!-- Item -->
+                <div class="text-black text-sm">
+                  <p>Quality issues noticed only after completion</p>
+                </div>
+
+                <!-- Item -->
+                <div class="text-black text-sm">
+                  <p>Poor coordination between designers and vendors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interior Projects Ends Here -->
 
     <!-- Designed Spaces Starts Here -->
     <section class="py-14 md:py-20 bg-white">
